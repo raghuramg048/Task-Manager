@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Iosevka Charon Mono", monospace;
+}
+
+.outer {
+  height: 100vh;
+  display: flex;
+  gap: 2vw;
+}
+
+.left {
+  height: 100vh;
+  width: 20vw;
+  background-color: #d4d4d4;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.right {
+  height: 100vh;
+  width: 76vw;
+}
+
+.title {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+.title > img {
+  height: 6vh;
+}
+
+.title > h2 {
+  font-weight: 600;
+}
+
+#notes {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+  padding: 1rem;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+#empty {
+  height: 10rem;
+  width: 10rem;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#empty > button {
+  border: 0;
+  background-color: aliceblue;
+}
+
+#empty > button > img {
+  height: 3rem;
+}
+
+.card {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.tool {
+  height: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tool > button {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.tool > button > img {
+  height: 0.9rem;
+}
+
+.head {
+  width: 98%;
+  margin: 0.1rem;
+  border: 0;
+  padding: 0.2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid black;
+  font-weight: 400;
+}
+
+.space {
+  height: 70%;
+  width: 98%;
+  margin: 0.1rem;
+  border: 0;
+  padding: 0.2rem;
+  overflow: auto;
+  scrollbar-width: none;
+  font-weight: 300;
+  font-size: 8pt;
+  line-height: 1rem;
+  letter-spacing: 0.2px;
+}
+
+input:focus,
+.space:focus {
+  outline: none;
+}
+
+#color1 {
+  background-color: #c4def0;
+}
+
+#color2 {
+  background-color: #c6d7b2;
+}
+
+#color3 {
+  background-color: #fae0ad;
+}
+
+#color4 {
+  background-color: #f5c2ab;
+}
+
+#color5 {
+  background-color: #f0adb0;
+}
+
+.card input,
+.card button {
+  background: inherit;
+}
